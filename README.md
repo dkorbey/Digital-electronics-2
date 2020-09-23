@@ -8,4 +8,4 @@
 1. List1
 2. List2
 
-[test](homework)
+[link to BUT](https://www.vutbr.cz/en/)
