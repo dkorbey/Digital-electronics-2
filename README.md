@@ -8,4 +8,4 @@
 1. List1
 2. List2
 
-[link to BUT](https://www.vutbr.cz/en/)
+[Link to BUT Website](https://www.vutbr.cz/en/)
