@@ -10,6 +10,7 @@
 2. List2
 
 [Link to BUT Website](https://www.vutbr.cz/en/)
+[Link to course's main github repository](https://github.com/tomas-fryza/Digital-electronics-2)
 
 ***IMPORTANT SENTENCE***
 - [ ] Checklist 1
