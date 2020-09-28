@@ -181,12 +181,12 @@ int main(void)
 		_delay_ms(LONG_DELAY);
 		
 		//D in morse code
+		longDot();
+  fe:	0e 94 5a 00 	call	0xb4	; 0xb4 <longDot>
 		shortDot();
-  fe:	0e 94 40 00 	call	0x80	; 0x80 <shortDot>
-		longDot();
- 102:	0e 94 5a 00 	call	0xb4	; 0xb4 <longDot>
-		longDot();
- 106:	0e 94 5a 00 	call	0xb4	; 0xb4 <longDot>
+ 102:	0e 94 40 00 	call	0x80	; 0x80 <shortDot>
+		shortDot();
+ 106:	0e 94 40 00 	call	0x80	; 0x80 <shortDot>
  10a:	2f ef       	ldi	r18, 0xFF	; 255
  10c:	89 e6       	ldi	r24, 0x69	; 105
  10e:	98 e1       	ldi	r25, 0x18	; 24
