@@ -30,6 +30,7 @@
  * when a push button is pressed. Functions from user-defined GPIO
  * library is used instead of low-level logic operations.
  */
+
 int main(void)
 {
     /* GREEN LED */
@@ -38,7 +39,7 @@ int main(void)
 
     /* second LED */
     GPIO_config_output(&DDRC, LED_RED);
-	GPIO_write_high(&PORTC, LED_RED); //LED off, because active-low
+	GPIO_write_low(&PORTC, LED_RED); //LED off, because active-low
 	
     /* push button */
     GPIO_config_input_pullup(&DDRD, BTN);
@@ -49,10 +50,12 @@ int main(void)
         // Pause several milliseconds
         _delay_ms(BLINK_DELAY);
 
-        // WRITE YOUR CODE HERE
+        if(!(GPIO_read(&PIND, BTN)))
+		{
 		GPIO_toggle(&PORTB, LED_GREEN);
 		
 		GPIO_toggle(&PORTC, LED_RED);
+		}
     }
 
     // Will never reach this

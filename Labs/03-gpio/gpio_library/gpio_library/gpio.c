@@ -57,5 +57,6 @@ uint8_t GPIO_read(volatile uint8_t *reg_name, uint8_t pin_num)
 {
 	uint8_t result;
 	
+	result = *reg_name>>pin_num;
 	return result;
 }
